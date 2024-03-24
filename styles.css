@@ -140,3 +140,45 @@
       border-bottom: 1px solid #444;
     }
   }
+
+ /* ============== Hero Section Styles ==============*/
+
+
+  .hero-section{
+    height: 100vh;
+    position: relative;
+}
+
+.hero-bg{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  top: -6rem;
+}
+.hero-image-overlay{
+  background-color: #122940;
+  opacity: 50%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -6rem;
+
+}
+.hero-text{
+    text-align: center;
+    position: relative;
+    top: 25%;
+    .hero-h3{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .hero-h1{
+      font-size: 4rem;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .hero-h4{
+      margin: 0;
+    }
+}
