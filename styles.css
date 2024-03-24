@@ -207,6 +207,52 @@
 }
 
  /* ============== MENU PAGE Styles ==============*/
+ 
+ .header-section{
+  height: 40vh;
+  position: relative;
+  display: flex;
+  opacity: 100%;
+  justify-content: center;
+}
 
+.header-h1{
+  font-size: 3rem;
+  margin-top: 3.5rem;
+}
+
+
+.menuHeader-bg{
+  background-image: url(./Images/ktryna-wq7VErajAaE-unsplash.jpg);
+  opacity: 40%;
+  background-size: cover;
+  background-position: 0 100%;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  top: -6rem;
+  z-index: -5;
+}
+
+
+.menus-section{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  font-size: 1.5rem;
+}
+
+
+@media (min-width: 420px) {
+  .header-h1{
+    font-size: 3.5rem;
+  }
+  .menus-section{
+    font-size: 2rem;
+  }
+}
+
+/* ============== ABOUT PAGE Styles ==============*/
 
 
