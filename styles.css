@@ -144,7 +144,7 @@
  /* ============== Hero Section Styles ==============*/
 
 
-  .hero-section{
+.hero-section{
     height: 100vh;
     position: relative;
 }
@@ -154,17 +154,16 @@
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: -6rem;
+  /* top: -6rem; */
 }
-.hero-image-overlay{
+/* .hero-image-overlay{
   background-color: #122940;
   opacity: 50%;
   position: absolute;
   height: 100%;
   width: 100%;
   top: -6rem;
-
-}
+} */
 .hero-text{
     text-align: center;
     position: relative;
@@ -188,4 +187,4 @@
     .hero-h1{
         font-size: 2rem;
     }
-}
+} 
