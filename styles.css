@@ -165,14 +165,27 @@
   position: absolute;
   height: 100%;
   top: -6rem;
-  opacity: 50%;
   z-index: -10;
+}
+.hero-image-overlay{
+  height: 50vh;
+  background-color: #122940;
+  opacity: 50%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -6rem;
+  z-index: -9;
 }
 
 .hero-text{
   text-align: center;
   position: relative;
   top: 25%; 
+  font-family: "espoir";
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+  color: #CF9D3A;
+    
 }
 .hero-h3{
   margin: 0;
@@ -188,13 +201,13 @@
 }
 
 
-@media (min-width: 420px) {
+@media (min-width: 500px) {
   .hero-h4{
     font-size: 1.3rem;
   }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 760px) {
   .hero-h1{
     font-size: 4rem;
   }
