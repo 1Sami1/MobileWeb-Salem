@@ -336,6 +336,12 @@ i.hide{
   margin-top: 2rem;
   margin-bottom: 10rem;
   font-size: 1.5rem;
+  a{
+    line-height: 2rem;
+    color: #CF9D3A;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+    transition: 0.3s ease-in-out;
+  }
 }
 
 
@@ -367,6 +373,7 @@ i.hide{
 .welcome-p{
   margin-bottom: 4rem;
   padding: 15px;
+  color: white;
 }
 
 
@@ -402,6 +409,19 @@ i.hide{
   gap: 16px;
   padding: 0 2rem;
 }
+.contact-submit{
+  margin-top: 2.5vmin;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #CF9D3A;
+  color: #282a3e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
 
 /* ========MOBILE MEDIA QUERY=========== */
 
@@ -431,7 +451,7 @@ i.hide{
     font-size: 1.3rem;
   }
   .menus-section{
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .reservation-form{
     max-width: 400px;
@@ -447,6 +467,9 @@ i.hide{
   }
   .welcome-p{
     font-size: 1.3rem;
+  }
+  .menus-section{
+    font-size: 1.6rem;
   }
   .hero-h3{
     font-size: 2.5rem;
@@ -480,6 +503,9 @@ i.hide{
   .eom-h2{
     font-size: 3.2rem;
 
+  }
+  .menus-section{
+    font-size: 2rem;
   }
 
   .eom-image{
