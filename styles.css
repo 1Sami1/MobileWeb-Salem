@@ -44,7 +44,7 @@
     margin: 0 10px;
     overflow: hidden;
 }
-.menu-button-container {
+/* .menu-button-container {
     display: none;
     height: 100%;
     width: 30px;
@@ -88,11 +88,9 @@
   }
   
   #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
+    margin-top: 0px; */
   /*  transforms the hamburger icon into a cross  */
-    transform: rotate(-45deg);
-  }
-
+   
 /* Mobile/tablet nav menu styling with media queries */
 
 
