@@ -170,7 +170,6 @@ i.hide{
   }
 
 
-
  /* ============== HOME PAGE Styles ==============*/
 
 
@@ -228,13 +227,6 @@ i.hide{
   margin: 0;
 }
 
-
-@media (min-width: 500px) {
-  .hero-h4{
-    font-size: 1.3rem;
-  }
-}
-
 @media (min-width: 760px) {
   .hero-h1{
     font-size: 4rem;
@@ -262,7 +254,6 @@ i.hide{
   margin-top: 3.5rem;
 }
 
-
 .menuHeader-bg{
   background-image: url(./Images/Headers/ktryna-wq7VErajAaE-unsplash.jpg);
   opacity: 40%;
@@ -276,7 +267,6 @@ i.hide{
   z-index: -5;
 }
 
-
 .menus-section{
   text-align: center;
   margin-top: 2rem;
@@ -284,15 +274,6 @@ i.hide{
   font-size: 1.5rem;
 }
 
-
-@media (min-width: 420px) {
-  .header-h1{
-    font-size: 3.5rem;
-  }
-  .menus-section{
-    font-size: 2rem;
-  }
-}
 
 /* ============== ABOUT PAGE Styles ==============*/
 
@@ -324,21 +305,6 @@ i.hide{
 }
 
 
-@media (min-width: 500px  ) {
-  .welcome-p{
-    width: 490px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  .welcome-p{
-    width: 700px;
-  }
-}
-
-
 /* ============== CONTACT PAGE Styles ==============*/
 
 .contactHeader-bg{
@@ -357,7 +323,6 @@ i.hide{
   margin-bottom: 10rem;
 }
 
-
 .reservation-h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -372,15 +337,53 @@ i.hide{
   padding: 0 2rem;
 }
 
-@media (min-width: 450px) {
+/* ========MOBILE MEDIA QUERY=========== */
+
+@media (min-width: 500px  ) {
+  .welcome-p{
+    width: 490px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+  .header-h1{
+    font-size: 3.2rem;
+  }
+  .hero-h4{
+    font-size: 1.3rem;
+  }
+  .menus-section{
+    font-size: 2rem;
+  }
   .reservation-form{
     max-width: 400px;
     margin: 0 auto;
   }
 }
 
+/* ========TABLET MEDIA QUERY=========== */
+
+@media (min-width: 760px) {
+  .hero-h1{
+    font-size: 4rem;
+  }
+  .welcome-p{
+    font-size: 1.3rem;
+  }
+  .hero-h3{
+    font-size: 2.5rem;
+  }
+  .hero-h4{
+    font-size: 1.7rem ;
+  }
+}
+
+/* ========DESKTOP MEDIA QUERY=========== */
+
 @media (min-width: 1000px) {
   .reservation-form{
     font-size: 1.4rem;
+  }
+  .welcome-p{
+    width: 700px;
   }
 }
