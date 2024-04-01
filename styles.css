@@ -1,6 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(./Images/Assets/site-bg.jpg);
+  background-size: cover;
+  background-color: #122940;
+  z-index: 43;
+  color: #CF9D3A;
 }
 
 
