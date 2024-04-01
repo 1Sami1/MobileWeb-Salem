@@ -227,6 +227,35 @@ i.hide{
   margin: 0;
 }
 
+.tile-section{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+  img{
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+  }
+}
+
+.tile{
+  position: relative;
+  display: inline-block;
+  padding: 1rem;
+  
+}
+.overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Espoir";
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  left: 50%;
+}
+
 @media (min-width: 760px) {
   .hero-h1{
     font-size: 4rem;
@@ -340,6 +369,15 @@ i.hide{
 /* ========MOBILE MEDIA QUERY=========== */
 
 @media (min-width: 500px  ) {
+  .tile-section{
+    img{
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .overlay{
+    font-size: 3rem;
+  }
   .welcome-p{
     width: 490px;
     margin: 0 auto;
@@ -385,5 +423,17 @@ i.hide{
   }
   .welcome-p{
     width: 700px;
+  }
+  .tile-section{
+    img{
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .tile{
+    padding: 2rem;
+  }
+  .overlay{
+    font-size: 4rem;
   }
 }
