@@ -4,63 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salem steakhouse</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/5667d54726.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.js" integrity="sha512-i/ns8wG9O57E0ztO4Ct//35oFx9AVTYCTFrRxHvUcx0d4ddfvvF2NwXFzAFNEsWcQuMWmST49JOp3EsVNNQAQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.extensions.min.js" integrity="sha512-fOlK0nmiY4Q7hrlnFMgmEiXBzCaDtIWFLCjPNwb5YN0PqcpburbfkSJ2UL+rcfdslRbNlDeml6t1Se9WLmRKjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+   
 </head>
 <body>
-    <header class="site-header">
-        <div class="header-logo">
-            <a href="./index.html"><Img src="./Images/Assets/salem_logo_v2.png" alt="Salem steakhouse Logo"></Img></a>
-        </div>
-        <nav class="site-nav">
-            <input id="menu-toggle" type="checkbox" />
-            <label class="menu-button-container" for="menu-toggle">
-                <div class="menu-button"></div>
-            </label>
-            <ul class="nav-ul">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
     <main class="site-main">
-        <section class="hero-section">
-            <div class="hero-text">
-                <h3 class="hero-h3">Welcome To</h3>
-                <h1 class="hero-h1">Salem Steakhouse</h1>
-                <h4 class="hero-h4"> Since 2024</h4>
+        <div id="fullpage">
+            <div class="section">
+                <header class="site-header">
+                    <div class="header-logo">
+                        <a href="./index.html"><Img src="./Images/Assets/salem_logo_v2.png" alt="Salem steakhouse Logo"></Img></a>
+                    </div>
+                    <nav class="site-nav">
+                        <input id="menu-toggle" type="checkbox" />
+                        <label class="menu-button-container" for="menu-toggle">
+                            <div class="menu-button"></div>
+                        </label>
+                        <ul class="nav-ul">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./menu.html">Menu</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                    <section class="hero-section">
+                    <div class="hero-text">
+                        <h3 class="hero-h3">Welcome To</h3>
+                        <h1 class="hero-h1">Salem Steakhouse</h1>
+                        <h4 class="hero-h4"> Since 2024</h4>
+                    </div>
+                    <div class="hero-image-overlay"></div>
+                    <div class="hero-bg"></div>
+                </section>
             </div>
-            <div class="hero-image-overlay"></div>
-            <div class="hero-bg"></div>
-        </section>
-        <section class="tile-section">
-            <div class="tile">
-                <img src="./Images/homepage/sebastian-doll-wxt4m8ECpgM-unsplash (1).jpg" alt="Tile 1">
-                <div class="overlay">
-                    <h2>Eat</h2>
-                </div>
+            <div class="section">
+                <section class="tile-section">
+                    <div class="tile">
+                        <img src="./Images/homepage/sebastian-doll-wxt4m8ECpgM-unsplash (1).jpg" alt="Tile 1">
+                        <div class="overlay">
+                            <h2>Eat</h2>
+                        </div>
+                    </div>
+                
+                    <div class="tile">
+                        <img src="./Images/homepage/hermes-rivera-aK6WGqxyHFw-unsplash (1).jpg" alt="Tile 2">
+                        <div class="overlay">
+                            <h2>Drink</h2>
+                        </div>
+                    </div>
+                
+                    <div class="tile">
+                        <img src="./Images/homepage/klara-kulikova-yjQDnOhGE34-unsplash.jpg" alt="Tile 3">
+                        <div class="overlay">
+                            <h2>Relax</h2>
+                        </div>
+                    </div>
+                </section>
             </div>
-        
-            <div class="tile">
-                <img src="./Images/homepage/hermes-rivera-aK6WGqxyHFw-unsplash (1).jpg" alt="Tile 2">
-                <div class="overlay">
-                    <h2>Drink</h2>
-                </div>
+            <div class="section">
+                <section class="reservation-section">
+                    <h2 class="eom-h2">Dine-in With Us!</h2>    
+                    <button class="eom-btn"><a href="./contact.html">Reserve a Table</a></button>
+                </section>
+
             </div>
-        
-            <div class="tile">
-                <img src="./Images/homepage/klara-kulikova-yjQDnOhGE34-unsplash.jpg" alt="Tile 3">
-                <div class="overlay">
-                    <h2>Relax</h2>
-                </div>
-            </div>
-        </section>
-        <section class="reservation-section">
-            <h2 class="eom-h2">Dine-in With Us!</h2>    
-            <button class="eom-btn"><a href="./reservation.html">Reserve a Table</a></button>
-        </section>
+    
+
+        </div>
     </main>
     <footer>
         <!-- FOOTER TO BE ADDED -->
