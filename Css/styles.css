@@ -2,7 +2,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-image: url(./Images/Assets/site-bg.jpg);
+  background-image: url(../Images/Assets/site-bg.jpg);
   font-family: 'Futura PT', sans-serif;
   background-size: cover;
   background-color: #122940;
@@ -193,7 +193,7 @@ i.hide{
   height: 100%;
 }
 .hero-bg{
-  background-image: url(./Images/Headers/jason-leung-poI7DelFiVA-unsplash.jpg);
+  background-image: url(../Images/Headers/jason-leung-poI7DelFiVA-unsplash.jpg);
   background-size: cover;
   width: 100%;
   max-width: 100%;
@@ -319,7 +319,7 @@ i.hide{
 }
 
 .menuHeader-bg{
-  background-image: url(./Images/Headers/ktryna-wq7VErajAaE-unsplash.jpg);
+  background-image: url(../Images/Headers/ktryna-wq7VErajAaE-unsplash.jpg);
   opacity: 40%;
   background-size: cover;
   background-position: 0 100%;
@@ -349,7 +349,7 @@ i.hide{
 
 
 .AboutHeader-bg{
-  background-image: url(./Images/Headers/AdobeStock_626472323.jpeg);
+  background-image: url(../Images/Headers/AdobeStock_626472323.jpeg);
   background-size: cover;
   background-position: 0 100%;
   width: 100%;
@@ -380,7 +380,7 @@ i.hide{
 /* ============== CONTACT PAGE Styles ==============*/
 
 .contactHeader-bg{
-  background-image: url(./Images/Headers/AdobeStock_626472323.jpeg);
+  background-image: url(../Images/Headers/AdobeStock_626472323.jpeg);
   background-size: cover;
   background-position: 0 50%;
   width: 100%;
@@ -518,3 +518,4 @@ i.hide{
     font-size: 1.5rem;
   }
 }
+
