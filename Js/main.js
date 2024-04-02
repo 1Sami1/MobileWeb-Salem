@@ -8,7 +8,7 @@ $(document).ready(function() {
 		navigationPosition: 'right',
 		navigationTooltips: ['firstSlide', 'secondSlide'],
 		showActiveTooltip: false,
-		slidesNavigation: false,
+		slidesNavigation: true,
 		slidesNavPosition: 'bottom',
 
 		//Scrolling
@@ -54,7 +54,7 @@ $(document).ready(function() {
 		responsiveWidth: 0,
 		responsiveHeight: 0,
 		responsiveSlides: false,
-		parallax: false,
+		parallax: true,
 		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 
 		//Custom selectors
