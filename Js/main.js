@@ -78,7 +78,7 @@ new fullpage('#fullpage', {
 });
 
 
-
+// PAGE ANIMATIONS
 
 $(document).ready(function() {
 	$(".animsition").animsition({
@@ -103,4 +103,13 @@ $(document).ready(function() {
 	  overlayParentElement : 'body',
 	  transition: function(url){ window.location.href = url; }
 	});
+  });
+
+
+// IMAGE SLIDER
+
+$('.main-carousel').flickity({
+	// options
+	cellAlign: 'left',
+	contain: true
   });
