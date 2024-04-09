@@ -376,7 +376,17 @@ i.hide{
   color: white;
 }
 
+.main-carousel {
+  margin: 0 auto;
+  width: 50%; 
+  margin-bottom: 15rem;
+  
+}
 
+.carousel-cell img {
+  width: 100%;
+  height: auto; 
+}
 /* ============== CONTACT PAGE Styles ==============*/
 
 .contactHeader-bg{
