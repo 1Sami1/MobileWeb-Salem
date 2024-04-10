@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" integrity="sha512-SagM1PHxt5mWDyWARVY6UOdhM5A8J+R1UqIWcGfiwOd+be7uHQagB+JQOmfVZF8jjJQqbyuWzw/KXfb4yqjBkQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" integrity="sha512-pYd2QwnzV9JgtoARJf1Ui1q5+p1WHpeAz/M0sUJNprhDviO4zRo12GLlk4/sKBRUCtMHEmjgqo5zcrn8pkdhmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="./Css/styles.css">
 </head>
 <body>
@@ -56,7 +57,7 @@
             <input type="tel" id="phone" name="phone" required>
 
             <label for="date">Date & Time:</label>
-            <input type="date" id="date" name="date" required>
+            <input type="date" class="flatpickr-input" id="date" name="date" required>
 
             <label for="party-size">Party Size:</label>
             <input type="number" id="party-size" name="party-size" min="1" required>
@@ -71,7 +72,13 @@
     <footer>
         <!-- FOOTER TO BE ADDED -->
     </footer>
-    <script src="./Js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+          $("#date").flatpickr({
+	enableTime: true,
+    dateFormat: "Y-m-d H:i",
+  });
+    </script>
     
 </body>
 </html>
