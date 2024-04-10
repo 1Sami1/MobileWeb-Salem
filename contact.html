@@ -19,8 +19,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js" integrity="sha512-pYd2QwnzV9JgtoARJf1Ui1q5+p1WHpeAz/M0sUJNprhDviO4zRo12GLlk4/sKBRUCtMHEmjgqo5zcrn8pkdhmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="            crossorigin=""/>
     <link rel="stylesheet" href="./Css/styles.css">
 </head>
+
 <body>
     <header class="site-header">
         <div class="header-logo">
@@ -47,37 +49,49 @@
             <div class="menuHeader-bg"></div>
         </section>
         <section class="reservation-section">
+            <h2 class="reservation-h2">Book a Table</h2>
+            <form action="#" method="post" class="reservation-form">
+                <label  for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-        <h2 class="reservation-h2">Book a Table</h2>
-        <form action="#" method="post" class="reservation-form">
-            <label  for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+                <label for="date">Date & Time:</label>
+                <input type="date" class="flatpickr-input" id="date" name="date" required>
 
-            <label for="date">Date & Time:</label>
-            <input type="date" class="flatpickr-input" id="date" name="date" required>
+                <label for="party-size">Party Size:</label>
+                <input type="number" id="party-size" name="party-size" min="1" required>
 
-            <label for="party-size">Party Size:</label>
-            <input type="number" id="party-size" name="party-size" min="1" required>
-
-            <button type="submit" class="contact-submit">Submit Reservation</button>
-        </form>
-    </section>
-    <section>
-        <!-- GOOGLE MAPS IFRAME DISPLAYED HERE TO SHOW OUR LOCATION -->
-    </section>
+                <button type="submit" class="contact-submit">Submit Reservation</button>
+            </form>
+        </section>
+        <section class="map-section">
+            <h2 class="reservation-h2">Our Location</h2>
+            <div id="map" class="map"></div>
+        </section>
     </main>
-    <footer>
-        <!-- FOOTER TO BE ADDED -->
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
     <script>
+        // initializing flatpickr plugin
           $("#date").flatpickr({
-	enableTime: true,
-    dateFormat: "Y-m-d H:i",
-  });
+                enableTime: true,
+                dateFormat: "Y-m-d H:i",
+            });
+
+            // initializing leaflet plugin
+            var map = L.map('map', {
+                center: [49.2794916, -123.1227261],
+                zoom: 10
+            });
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);  
+            var marker = L.marker([49.2794916, -123.1227261]).addTo(map);      
     </script>
     
 </body>

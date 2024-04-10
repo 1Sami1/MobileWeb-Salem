@@ -432,6 +432,15 @@ i.hide{
   transition: 0.3s ease-in-out;
 }
 
+.map{
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 15rem;
+  margin-top: 4rem;
+
+}
+
 
 /* ========MOBILE MEDIA QUERY=========== */
 
@@ -527,6 +536,9 @@ i.hide{
   .eom-btn{
     margin-top: 2vmin;
     font-size: 1.5rem;
+  }
+  .map{
+    width: 50%;
   }
 }
 

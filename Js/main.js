@@ -1,9 +1,20 @@
+
+// PLUGINS USED
+// Fullpage.js
+// Flickity.js
+// Animsition.js
+// Fltapickr.js
+// Leaflet.js
+
+
+// Initializing Fullpage plugin
 $(document).ready(function() {
     $('#fullpage').fullpage({
         autoScrolling: true,
         scrollHorizontally: true
     });
 });
+// license to use the plugin
 new fullpage('#fullpage', {
   licenseKey: 'gplv3-license'
 });
@@ -11,6 +22,7 @@ new fullpage('#fullpage', {
 
 // PAGE ANIMATIONS
 
+// initializing animsition plugin
 $(".animsition").animsition({
 	inClass: 'fade-in',
 	outClass: 'fade-out',
